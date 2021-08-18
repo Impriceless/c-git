@@ -233,10 +233,10 @@
     // }
 
 
-//    int main() {
-//        printf("%s\n", "Hello");
-//        printf("%10s", "Hello");        //means string has to be 10 characters total so adds white space to get enough 10 character
-//    }
+	//int main() {
+	//    printf("%s\n", "Hello");
+	//    printf("%10s", "Hello");        //means string has to be 10 characters total so adds white space to get enough 10 character
+	//}
 
 
 //CONSTANTS IN C
@@ -247,12 +247,12 @@
 
 //BASIC INPUT FUNCTION - scanf()
     //Example:
-//    int main() {
-//    	int n;
-//    	printf("Enter a number: ");
-//		scanf("%d", &n);
-//		printf("\nThe nubmer you've entered is %d", n);
-//	}
+	//int main() {
+	//	int n;
+	//	printf("Enter a number: ");
+	//	scanf("%d", &n);
+	//	printf("\nThe nubmer you've entered is %d", n);
+	//}
 	
 	
 //OPERATORS
@@ -265,18 +265,58 @@
 	//Other Operators: ?: & *(pointer) sizeof() ,(comma operator)
 
 	//Pre increment vs Post increment (Pre decrement vs Post decrement)
-//		int main() {
-//			int a = 5;
-//			int b = 5;
-//			int x = ++a;
-//			int y = b++;
-//			printf("%d\n", x);	//6
-//			printf("%d", y);    //5
-//			return 0;
-//		}
+		//int main() {
+		//	int a = 5;
+		//	int b = 5;
+		//	int x = ++a;
+		//	int y = b++;
+		//	printf("%d\n", x);	//6
+		//	printf("%d", y);    //5
+		//	return 0;
+		//}
 		
 	//PRE-INCREMENT  (++a) : First increment by 1 then assign it into the variable.
 	//Post-INCREMENT (a++) : First assign the value into the variable then increment by 1
 
+
+	//RELATIONAL OPERATOR
+		//int main() {
+		//	printf("%d\n", 5==4);
+		//	printf("%d", 5>4);
+		//}	
+		
+	//LOGICAL OPERATOR
+		//&& and || are used to combine two or more conditions
+		//&& returns truw when all conditions are true || returns true if at least one condition is true
+	
+			//int main() {
+			//	int a=5;
+			//	if (a==5 && a!=6 && a<24 && a>0 && a>=5 && a<=5)    //ALL ARE TRUE
+			//		printf("BINGO");
+			//		
+			//	puts("\n");
+			//	
+			//	if (a>5 || a>24 || a<0 || a==5 || a<5)				//ONLY ONE CONDITION IS TRUE
+			//		printf("BINGO");
+			//}
+	
+		// ! is used to complement the condition. Meaning it returns true when the condition is false and vice-versa
+		
+			//int main() {
+			//	int a=5;
+			//	printf("%d\n", a==5);		//RETURNS 1(true)
+			//	printf("%d\n", a!=5);			//RETURNS 0(false)
+			//	
+			//	if (a == 5) printf("BINGO\n");
+			//	if (a == 6) printf("INCORRECT\n");
+			//	if (!(a == 6)) printf("CORRECT\n");
+			//}
+			
+	//BITWISE OPERATOR
+		//int main() {
+		//	printf("%d\n", 7&4);			//7 = 0111 and 4 = 0100  bit-wise AND: 0&0=0 1&1=1 1&0=0 1&0=0 so the result is 0100 = 4 in decimal  
+		//	printf("%d\n", 7|4);			//7 = 0111 and 4 = 0100  bit-wise OR:  0|0=0 1|1=1 1|0=1 1|0=1 so the result is 0111 = 4 in decimal
+		//	printf("%d\n", ~3);
+		//}
 	
 	
