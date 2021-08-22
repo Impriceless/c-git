@@ -312,11 +312,53 @@
 			//	if (!(a == 6)) printf("CORRECT\n");
 			//}
 			
-	//BITWISE OPERATOR
-		//int main() {
-		//	printf("%d\n", 7&4);			//7 = 0111 and 4 = 0100  bit-wise AND: 0&0=0 1&1=1 1&0=0 1&0=0 so the result is 0100 = 4 in decimal  
-		//	printf("%d\n", 7|4);			//7 = 0111 and 4 = 0100  bit-wise OR:  0|0=0 1|1=1 1|0=1 1|0=1 so the result is 0111 = 4 in decimal
-		//	printf("%d\n", ~3);
-		//}
-	
+		//BITWISE OPERATOR
+//		int main() {
+//AND		printf("%d\n", 7&4);			//7 = 0111 and 4 = 0100  bit-wise AND: 0&0=0 1&1=1 1&0=0 1&0=0 so the result is 0100 = 4 in decimal  
+//OR		printf("%d\n", 7|4);			//7 = 0111 and 4 = 0100  bit-wise OR:  0|0=0 1|1=1 1|0=1 1|0=1 so the result is 0111 = 4 in decimal
+//NOT		printf("%d\n", ~3);				//This is not operation. The result is two's complement of (not of 3). (Not of 3) = 0010 -> 1100. Two's complement of 1100=0011+1. 3=0011+1=0100=4. So, ~3 = -4						
+//		}
+
+		//Bit wise left shift(<<) and right shift(>>)
+		
+			//LEFT SHIFT OPERATOR
+			// First Operand      <<    Second Operand
+			// whose bits get			decides the no. of bits
+			// left shifted				to shift the bits
+			
+			//  	  	 3 << 1
+			// 	3 in binary = 0000 0011  		(Needs to be shifted to the left by 1 bit)
+			// 				= 0(got truncated) 0000 011_ <--- We fill the remaining bits by 0
+			//				= 0000 0110 (6)
+			// So, 3 << 1 = 6     
+
+//NOTE: LEFT SHIFT IS EQUIVALENT TO THE MULTIPLICATION BY 2^(right operand)
+//So, 3<<1 = 3 X 2^(1) = 6			
+			
+			//RIGHT SHIFT OPERATOR
+			// First Operand      >>    Second Operand
+			// whose bits get			decides the no. of bits
+			// right shifted			to shift the bits
+			
+			//  	  	 3 >> 1
+			// 	3 in binary = 0000 0011  		(Needs to be shifted to the right by 1 bit)
+			// 				= We fill the remaining bits by 0 ---> _000 0001 1(gets truncated)
+			//				= 0000 0001 (1)
+			// So, 3 >> 1 = 1 
+			
+//NOTE: RIGHT SHIFT IS EQUIVALENT TO THE DIVISION BY 2^(right operand)
+//So, 3>>1 = 3 / 2^(1) = 1	    
+		
+			//int main() {
+			//	printf("%d\n", 3<<1);		//6
+			//	printf("%d\n", 3>>1);		//1
+			//}
+			
+			
+		//BITWISE XOR(^)
+			//int main() {
+			//	printf("%d", 7^4);		//BITWISE XOR = 0111 ^ 0100 = 0^0=0 1^1=0 1^0=1 1^0=1. So the result is 0011 = 3
+			//}
+		
+
 	
