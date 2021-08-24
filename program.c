@@ -361,4 +361,151 @@
 			//}
 		
 
+//CONDITIONALS
+	
+	//if else, nested if else, else if 
+	
+	//Switch
+		//Switch is a great replacement to long else-if constructs.
+		
+		//Example:
+			//int main () {
+				//char x = 'A';
+				////printf("%d", x);		//x returns an integer so we can use characters in switch statement, but not strings.
+				//
+				//switch(x) {
+				//	case 'A': printf("Excellent\n");
+				//			  break;
+				//	case 'B': printf("Well  done\n");
+				//			  break;
+				//	case 'C':
+				//	case 'D': printf("You pass\n");
+				//			  break;
+				//	default: printf("You fail");					  
+				//			  
+				//}
+				//printf("Your grade is %c\n", x);
+			//}
+
+	//NOTE: You can only use integer constant types(integer(not floats) or character) in both switch expression and case label.
+
+
+//LOOPS
+	//for loop
+		//int main() {
+		//	int i;
+		//	
+		//	for(i = 0; i<5; i++) {
+		//		printf("Hello for the %dth time\n", i+1);
+		//	}		
+		//}
+
+	//while loop
+		//int main() {
+		//	int i = 0;
+		//	
+		//	while (i<5) {
+		//		printf("Hello for the %dth time\n", i+1);
+		//		i++;
+		//	}
+		//}
+
+	//do while loop
+		//int main() {
+		//	int i = 3;
+		//	
+		//	do {
+		//		printf("This creates an infinite loop\n");
+		//		i--;
+		//	}
+		//	while (i<3);		
+		//}
+		
+	//EXAMPLE: Write a program which allows an user to enter an integer until he/she enters the value 0
+	
+	//while loop 
+		//int main() {
+		//	int n;
+		//	printf("Enter an integer: ");
+		//	scanf("%d", &n);
+		//	
+		//	while (n!=0) {
+		//		printf("Enter an integer: ");
+		//		scanf("%d", &n);
+		//	}
+		//	
+		//	printf("You are now out of the loop");
+		//}
+		
+	//do while loop
+		//int main() {
+		//	int n;
+		//	
+		//	do {
+		//		printf("Enter an integer: ");
+		//		scanf("%d", &n);
+		//	}
+		//	while (n!=0);
+		//	
+		//	printf("You're now out of the loop");
+		//}
+
+	//DO WHILE IS PREFERRABLE IN THIS CASE!!!
+	
+
+	//BREAK AND CONTINUE
+	
+	//Break 
+		//used to terminate the loop
+		
+		//EXAMPLE: Write a program that allows a user to enter a number until the number is negative or a zero
+		
+		//int main() {
+		//	int n;
+		//	printf("Enter a number: ");
+		//	scanf("%d", &n);
+		//	
+		//	while (n != 0) {
+		//		if (n < 0) break;		//if true then break comes out of the loop and the rest of the loop is not evaluated
+		//		printf("Enter a number: ");
+		//		scanf("%d", &n);			
+		//	}
+		//}
+	
+	//Continue
+		//similar to break but instead of terminating the loop, it forces to execute the next iteration of the loop
+	
+		//EXAMPLE: Write a program to print all odd numbers from 1 to 20
+		
+			//int main() {
+			//	int i, n = 2;
+			//		
+			//	for (i=1; i<=20; i++) {
+			//		
+			//		if (i==n) {
+			//			n = n + 2;
+			//			continue;		
+			//		}
+			//		printf("%d ", i);
+			//	}
+			//}
+			
+			//FOR EVEN
+			
+			//int main() {
+			//	int i, n = 1;
+			//	
+			//	for (i=1; i<=20; i++) {
+			//		
+			//		if (i==n) {
+			//			n = n + 2;
+			//			continue;		
+			//		}
+			//		printf("%d ", i);
+			//	}
+			//}
+
+	
+
+	
 	
