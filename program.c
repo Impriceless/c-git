@@ -507,6 +507,55 @@
 
 
 
+//FUNCTIONS
+	//A function is a group of statements that together perform a task. Every C program has at least one function, which is main(), and all the most trivial programs can define additional functions.
+	
+	//Syntax: return_type function_name(set_of_parameters)		//Parameters is optional
+	//Example: int printPrime(int start, int end)
+	
+	
+	//FUNCTION DECLARAION	
+		//Eg: int fun(int par1, char var2);  <------- ends with semi-colon. We can also write int fun(int, char); only for declaration
+		
+	//FUNCTION DEFINITION 
+		//EXAMPLE:
+			//int sum(int, int);  //<---------FUNCTION DECLARATION
+			//
+			//int main() {
+				//int a = 20, b = 30;
+				//int add = sum(5,6);
+				//int add2 = sum(a,b);
+				//printf("The sum is %d", add);
+				//printf("\nThe next sum is %d", add2);
+			//}	
+			//			
+			//int sum(int x, int y) {
+			//	return x+y;					//<---------FUNCTION DEFINITION	
+			//} 
+			
+	
+		//ARGUMENT AND PARAMETER
+		
+			//Parameter is a variable in the declaration in the definition of a function. x and y are the parameters of the function sum.
+			//Argument is the actual value of parameter that gets passed to the funciton. a and b, 5 and 6 are the different arguments.	
+		
+	
+	//CALL BY VALUE VS CALL BY REFERENCE
+		
+		//Call by value
+			//Here, values of arguments will be copied to parameters and these two arguments and parameters gets stored in different locations.
+			
+	//AFTER POINTER
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 
 	
